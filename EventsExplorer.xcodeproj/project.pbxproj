@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		9805AEC53069D7E200850D8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9805AEAA3069D7E100850D8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9805AEB13069D7E100850D8C;
+			remoteInfo = EventsExplorer;
+		};
+		9805AECF3069D7E200850D8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9805AEAA3069D7E100850D8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9805AEB13069D7E100850D8C;
+			remoteInfo = EventsExplorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9805AEB23069D7E100850D8C /* EventsExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9805AEC43069D7E200850D8C /* EventsExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9805AECE3069D7E200850D8C /* EventsExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9805AEB43069D7E100850D8C /* EventsExplorer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EventsExplorer;
+			sourceTree = "<group>";
+		};
+		9805AEC73069D7E200850D8C /* EventsExplorerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EventsExplorerTests;
+			sourceTree = "<group>";
+		};
+		9805AED13069D7E200850D8C /* EventsExplorerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EventsExplorerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9805AEAF3069D7E100850D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		9805AEC13069D7E200850D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		9805AECB3069D7E200850D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9805AEA93069D7E100850D8C = {
+			isa = PBXGroup;
+			children = (
+				9805AEB43069D7E100850D8C /* EventsExplorer */,
+				9805AEC73069D7E200850D8C /* EventsExplorerTests */,
+				9805AED13069D7E200850D8C /* EventsExplorerUITests */,
+				9805AEB33069D7E100850D8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9805AEB33069D7E100850D8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9805AEB23069D7E100850D8C /* EventsExplorer.app */,
+				9805AEC43069D7E200850D8C /* EventsExplorerTests.xctest */,
+				9805AECE3069D7E200850D8C /* EventsExplorerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9805AEB13069D7E100850D8C /* EventsExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9805AED63069D7E200850D8C /* Build configuration list for PBXNativeTarget "EventsExplorer" */;
+			buildPhases = (
+				9805AEAE3069D7E100850D8C /* Sources */,
+				9805AEAF3069D7E100850D8C /* Frameworks */,
+				9805AEB03069D7E100850D8C /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				9805AEB43069D7E100850D8C /* EventsExplorer */,
+			);
+			name = EventsExplorer;
+			productName = EventsExplorer;
+			productReference = 9805AEB23069D7E100850D8C /* EventsExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9805AEC33069D7E200850D8C /* EventsExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9805AED93069D7E200850D8C /* Build configuration list for PBXNativeTarget "EventsExplorerTests" */;
+			buildPhases = (
+				9805AEC03069D7E200850D8C /* Sources */,
+				9805AEC13069D7E200850D8C /* Frameworks */,
+				9805AEC23069D7E200850D8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9805AEC63069D7E200850D8C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9805AEC73069D7E200850D8C /* EventsExplorerTests */,
+			);
+			name = EventsExplorerTests;
+			productName = EventsExplorerTests;
+			productReference = 9805AEC43069D7E200850D8C /* EventsExplorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9805AECD3069D7E200850D8C /* EventsExplorerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9805AEDC3069D7E200850D8C /* Build configuration list for PBXNativeTarget "EventsExplorerUITests" */;
+			buildPhases = (
+				9805AECA3069D7E200850D8C /* Sources */,
+				9805AECB3069D7E200850D8C /* Frameworks */,
+				9805AECC3069D7E200850D8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9805AED03069D7E200850D8C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9805AED13069D7E200850D8C /* EventsExplorerUITests */,
+			);
+			name = EventsExplorerUITests;
+			productName = EventsExplorerUITests;
+			productReference = 9805AECE3069D7E200850D8C /* EventsExplorerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9805AEAA3069D7E100850D8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					9805AEB13069D7E100850D8C = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					9805AEC33069D7E200850D8C = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 9805AEB13069D7E100850D8C;
+					};
+					9805AECD3069D7E200850D8C = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 9805AEB13069D7E100850D8C;
+					};
+				};
+			};
+			buildConfigurationList = 9805AEAD3069D7E100850D8C /* Build configuration list for PBXProject "EventsExplorer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9805AEA93069D7E100850D8C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9805AEB33069D7E100850D8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9805AEB13069D7E100850D8C /* EventsExplorer */,
+				9805AEC33069D7E200850D8C /* EventsExplorerTests */,
+				9805AECD3069D7E200850D8C /* EventsExplorerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9805AEB03069D7E100850D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		9805AEC23069D7E200850D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		9805AECC3069D7E200850D8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9805AEAE3069D7E100850D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		9805AEC03069D7E200850D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		9805AECA3069D7E200850D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9805AEC63069D7E200850D8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9805AEB13069D7E100850D8C /* EventsExplorer */;
+			targetProxy = 9805AEC53069D7E200850D8C /* PBXContainerItemProxy */;
+		};
+		9805AED03069D7E200850D8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9805AEB13069D7E100850D8C /* EventsExplorer */;
+			targetProxy = 9805AECF3069D7E200850D8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9805AED43069D7E200850D8C /* Debug configuration for PBXProject "EventsExplorer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9805AED53069D7E200850D8C /* Release configuration for PBXProject "EventsExplorer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9805AED73069D7E200850D8C /* Debug configuration for PBXNativeTarget "EventsExplorer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = homeAssignment.EventsExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9805AED83069D7E200850D8C /* Release configuration for PBXNativeTarget "EventsExplorer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = homeAssignment.EventsExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9805AEDA3069D7E200850D8C /* Debug configuration for PBXNativeTarget "EventsExplorerTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = homeAssignment.EventsExplorerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventsExplorer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EventsExplorer";
+			};
+			name = Debug;
+		};
+		9805AEDB3069D7E200850D8C /* Release configuration for PBXNativeTarget "EventsExplorerTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = homeAssignment.EventsExplorerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventsExplorer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EventsExplorer";
+			};
+			name = Release;
+		};
+		9805AEDD3069D7E200850D8C /* Debug configuration for PBXNativeTarget "EventsExplorerUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = homeAssignment.EventsExplorerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventsExplorer;
+			};
+			name = Debug;
+		};
+		9805AEDE3069D7E200850D8C /* Release configuration for PBXNativeTarget "EventsExplorerUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = homeAssignment.EventsExplorerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventsExplorer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9805AEAD3069D7E100850D8C /* Build configuration list for PBXProject "EventsExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9805AED43069D7E200850D8C /* Debug configuration for PBXProject "EventsExplorer" */,
+				9805AED53069D7E200850D8C /* Release configuration for PBXProject "EventsExplorer" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		9805AED63069D7E200850D8C /* Build configuration list for PBXNativeTarget "EventsExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9805AED73069D7E200850D8C /* Debug configuration for PBXNativeTarget "EventsExplorer" */,
+				9805AED83069D7E200850D8C /* Release configuration for PBXNativeTarget "EventsExplorer" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		9805AED93069D7E200850D8C /* Build configuration list for PBXNativeTarget "EventsExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9805AEDA3069D7E200850D8C /* Debug configuration for PBXNativeTarget "EventsExplorerTests" */,
+				9805AEDB3069D7E200850D8C /* Release configuration for PBXNativeTarget "EventsExplorerTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		9805AEDC3069D7E200850D8C /* Build configuration list for PBXNativeTarget "EventsExplorerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9805AEDD3069D7E200850D8C /* Debug configuration for PBXNativeTarget "EventsExplorerUITests" */,
+				9805AEDE3069D7E200850D8C /* Release configuration for PBXNativeTarget "EventsExplorerUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9805AEAA3069D7E100850D8C /* Project object */;
+	validationLevel = 1;
+}
