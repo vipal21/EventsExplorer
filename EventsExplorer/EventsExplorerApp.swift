@@ -10,8 +10,6 @@ import CoreData
 
 @main
 struct EventsExplorerApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
             MainTabBarView()

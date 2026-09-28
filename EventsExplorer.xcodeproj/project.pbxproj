@@ -6,6 +6,11 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9805AF103069FA9100850D8C /* EventEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805AF0E3069FA9100850D8C /* EventEntity+CoreDataClass.swift */; };
+		9805AF113069FA9100850D8C /* EventEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805AF0F3069FA9100850D8C /* EventEntity+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9805AEC53069D7E200850D8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		9805AEB23069D7E100850D8C /* EventsExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9805AEC43069D7E200850D8C /* EventsExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9805AECE3069D7E200850D8C /* EventsExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9805AF0E3069FA9100850D8C /* EventEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EventEntity+CoreDataClass.swift"; path = "EventsExplorer/Services/Coredata/EventEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9805AF0F3069FA9100850D8C /* EventEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EventEntity+CoreDataProperties.swift"; path = "EventsExplorer/Services/Coredata/EventEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +76,8 @@
 		9805AEA93069D7E100850D8C = {
 			isa = PBXGroup;
 			children = (
+				9805AF0E3069FA9100850D8C /* EventEntity+CoreDataClass.swift */,
+				9805AF0F3069FA9100850D8C /* EventEntity+CoreDataProperties.swift */,
 				9805AEB43069D7E100850D8C /* EventsExplorer */,
 				9805AEC73069D7E200850D8C /* EventsExplorerTests */,
 				9805AED13069D7E200850D8C /* EventsExplorerUITests */,
@@ -215,6 +224,8 @@
 		9805AEAE3069D7E100850D8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				9805AF103069FA9100850D8C /* EventEntity+CoreDataClass.swift in Sources */,
+				9805AF113069FA9100850D8C /* EventEntity+CoreDataProperties.swift in Sources */,
 			);
 		};
 		9805AEC03069D7E200850D8C /* Sources */ = {
