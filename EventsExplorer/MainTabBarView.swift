@@ -9,22 +9,28 @@ import SwiftUI
 
 struct MainTabBarView: View {
     @State private var selectedTab: Int = 0
+    // Injected central master instance managing your entire tab hierarchy pipeline
+    @State private var sharedExploreViewModel: ExploreViewModel
+
     /// Initializer Injection (DI Pattern)
-    init() {}
+    init(viewModel: ExploreViewModel) {
+        // Correctly initialize the state property wrapper with the injected value
+        _sharedExploreViewModel = State(wrappedValue: viewModel)
+    }
     var body: some View {
         TabView(selection: $selectedTab) {
-            ExploreView()
+            ExploreView(viewModel: sharedExploreViewModel)
                 .tabItem {
                     Label("Explore", systemImage: "map")
                 }
                 .tag(0)
-            AllEventsListView()
+            AllEventsListView(viewModel: sharedExploreViewModel)
                 .tabItem {
                     Label("All Events", systemImage: "calendar")
                 }
                 .tag(1)
 
-            FavouriteListView()
+            FavouriteListView(viewModel: sharedExploreViewModel)
                 .tabItem {
                     Label("Favorites", systemImage: "heart.fill")
                 }
@@ -32,8 +38,4 @@ struct MainTabBarView: View {
         }
         .tint(.blue)
     }
-}
-
-#Preview {
-    MainTabBarView()
 }

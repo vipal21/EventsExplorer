@@ -10,9 +10,17 @@ import CoreData
 
 @main
 struct EventsExplorerApp: App {
+    // 1. Initialize your business infrastructure layer safely on the Main Actor
+    @State private var productionViewModel: ExploreViewModel
+    
+    init() {
+        let liveService = OnlineEventService()
+        _productionViewModel = State(wrappedValue: ExploreViewModel(service: liveService))
+    }
+    
     var body: some Scene {
         WindowGroup {
-            MainTabBarView()
+            MainTabBarView(viewModel: productionViewModel)
         }
     }
 }
