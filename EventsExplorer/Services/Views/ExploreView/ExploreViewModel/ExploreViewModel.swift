@@ -8,10 +8,11 @@
 import MapKit
 import Observation
 import SwiftUI
+import CoreLocation
 
 @MainActor
 @Observable
-final class ExploreViewModel: NSObject, CLLocationManagerDelegate{
+final class ExploreViewModel: NSObject, CLLocationManagerDelegate {
     // Data States
     var events: [Event] = []
     var isLoading: Bool = false
@@ -36,15 +37,19 @@ final class ExploreViewModel: NSObject, CLLocationManagerDelegate{
     private let coreDataManager = CoreDataManager.shared
 
     /// Standard Dependency Injection Initializer
-     init(service: EventServiceProtocol) {
-         self.service = service
-         super.init()
-         locationManager.delegate = self
-         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-     }
+    init(service: EventServiceProtocol) {
+        self.service = service
+        super.init()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+    }
 
     /// Core method to initiate location gathering and fetch events
+    /// Core method to initiate location gathering and fetch events
     func requestLocationAndLoadData() {
+        // Show loading UI instantly on view appearance
+        isLoading = true
+        
         switch locationManager.authorizationStatus {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
@@ -58,9 +63,42 @@ final class ExploreViewModel: NSObject, CLLocationManagerDelegate{
         }
     }
 
+    // MARK: - CLLocationManagerDelegate Methods
+
+    nonisolated func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        Task { @MainActor in
+            switch manager.authorizationStatus {
+            case .authorizedWhenInUse, .authorizedAlways:
+                manager.requestLocation()
+            case .denied, .restricted:
+                self.loadExploreEvents()
+            default:
+                break
+            }
+        }
+    }
+
+    nonisolated func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        Task { @MainActor in
+            if let location = locations.last {
+                self.currentUserLocation = location
+            }
+            self.loadExploreEvents()
+        }
+    }
+
+    nonisolated func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        Task { @MainActor in
+            print("⚠️ Location manager failed with error: \(error.localizedDescription)")
+            // Fallback to loading events even if location determination fails
+            self.loadExploreEvents()
+        }
+    }
+
+    /// Fetches backend events using your service architecture
     /// Fetches backend events using your service architecture
     func loadExploreEvents() {
-        guard !isLoading else { return }
+        // Set loading state (guarantees loader is active)
         isLoading = true
 
         Task {
@@ -97,7 +135,6 @@ final class ExploreViewModel: NSObject, CLLocationManagerDelegate{
         }
     }
 
-    // Replace the old selectPin method in ExploreViewModel with this simplified coordinator function:
     func selectPinDirectly(for id: Int64) {
         tappedPinID = id
         scrolledID = id
