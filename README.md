@@ -1,7 +1,7 @@
-# LocalEventsExplorer
-# 📍 LocalEventsExplorer - SwiftUI CoreLocation & MapKit Matrix App
+# EventsExplorer
+# 📍 EventsExplorer - SwiftUI CoreLocation & MapKit Matrix App
 
-LocalEventsExplorer is a high-performance, modern iOS application built using **SwiftUI** and modern Swift Concurrency. It orchestrates real-time event exploration via map canvases and clean list views through a rigid **Single Source of Truth** dependency injection pipeline.
+EventsExplorer is a high-performance, modern iOS application built using **SwiftUI** and modern Swift Concurrency. It orchestrates real-time event exploration via map canvases and clean list views through a rigid **Single Source of Truth** dependency injection pipeline.
 
 ---
 
@@ -31,7 +31,7 @@ To ensure system `CoreLocation` updates behave accurately across simulator and t
 
 ```xml
 <key>NSLocationWhenInUseUsageDescription</key>
-<string>LocalEventsExplorer requires your live geographic location metrics to calculate real-time distance measurements to local event venues.</string>
+<string>EventsExplorer requires your live geographic location metrics to calculate real-time distance measurements to local event venues.</string>
 ```
 
 ---
